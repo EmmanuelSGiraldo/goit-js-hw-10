@@ -1,0 +1,69 @@
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(135deg, #000000, #a239ca, #00ff9d, #32ffeb); /* Gradiente con negro dominante y otros colores */
+  color: #ffffff; /* Cambiar color de texto a blanco */
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar elementos verticalmente */
+  justify-content: center; /* Centrar elementos horizontalmente */
+  min-height: 100vh; /* Establecer altura mínima de la pantalla */
+}
+
+/* Estilos para el cuadro de búsqueda */
+#search-box {
+  font: inherit;
+  padding: 8px;
+  max-width: 320px;
+  margin-bottom: 16px;
+}
+
+/* Estilos para la lista de países */
+.country-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Habilitar la barra de desplazamiento vertical */
+  max-height: 200px; /* Establecer una altura máxima para la lista */
+  scroll-behavior: smooth; /* Agregar animación de desplazamiento */
+}
+
+.country__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+  background-image: linear-gradient(135deg, #000000, #32ffeb, #00ff, #000000); /* Cambiar fondo con gradiente neon y que se mezcle con negro */
+  padding: 8px; /* Agregar espacio interno */
+  border-radius: 4px; /* Agregar bordes redondeados */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  animation: none !important; /* Cancelar la animación de giro */
+}
+
+.country__name {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #ff00cc; /* Cambiar color de texto a neón rosa */
+}
+
+/* Estilos para la tarjeta de país */
+.country__name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  background-image: linear-gradient(135deg, #000000, #32ffeb, #00ff, #000000); /* Cambiar fondo con gradiente neon y que se mezcle con negro */
+}
+
+.country__img {
+  width: 25px;
+  height: 15px;
+}
